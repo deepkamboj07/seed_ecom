@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap";
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+body::-webkit-scrollbar {
+  width: 0px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #808080;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.height {
+  height: 60% !important;
+}
+
+.textGreen {
+  color: #ff9900 !important;
+}
+
+.new-class-for-dropdown{
+  position: absolute;
+  z-index: 999;
+  background-color: white;
+  border-radius: 10px;
+}
+
+
+@keyframes menu-open {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes menu-close {
+  0% {
+    width: 80%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+.animate-menu-open {
+  animation: menu-open 0.5s ease forwards;
+}
+
+.animate-menu-close {
+  animation: menu-close 0.5s ease forwards;
+}
+
+.my-custom-table .ant-pagination-item {
+  border-color: #FF9900; /* Change this to your desired color */
+}
+
+.my-custom-table .ant-pagination-item a {
+  color: #FF9900; /* Change this to your desired color */
+}
+
+.my-custom-table .ant-pagination-item-active {
+  border-color: #FF9900; /* Change this to your desired color */
+}
+
+.my-custom-table .ant-pagination-item-active a {
+  color: #FF9900; /* Change this to your desired color */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  width: 0px;
+}
+
+.font-poppins{
+  font-family: "Poppins", sans-serif;
+}
+
+/* Custom styles for the dropdown */
+.my-custom-dropdown .ant-select-dropdown-menu-item {
+  background-color: #FF9900; /* Change this to your desired background color */
+  color: #FFFFFF; /* Change this to your desired text color */
+}
+
+.my-custom-dropdown .ant-select-dropdown-menu-item:hover {
+  background-color: #FF6600; /* Change this to your desired hover background color */
+  color: #FFFFFF; /* Change this to your desired hover text color */
+}
+
+.my-custom-dropdown .ant-select-dropdown-menu-item a {
+  color: #FFFFFF; /* Change this to your desired link color */
+}
+
+.my-custom-dropdown .ant-select-dropdown-menu-item a:hover {
+  color: #FFD700; /* Change this to your desired hover link color */
+}
