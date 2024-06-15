@@ -171,7 +171,7 @@ const PaymentSuccess = () => {
                   >
                     <div className="flex items-center">
                       <img
-                        src={`https://d3oj8gzfxhvk43.cloudfront.net/${item?.photo?.keys[0]}`}
+                        src={`${item?.photo?.keys[0]}`}
                         className="shadow-xl rounded-xl object-cover h-[125px] w-[125px] my-4"
                       />
                       <div className="ps-4 flex flex-col gap-3">

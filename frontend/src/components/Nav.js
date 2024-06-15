@@ -76,12 +76,8 @@ const Nav = ({ onData }) => {
         <div className="flex items-center justify-center items-center sm:flex w-full">
           <div className="w-full flex justify-between md:w-[80%] h-full items-center">
             <div style={{ width: "20%" }} className="">
-              <Link to="/" className="flex justify-center">
-                <img
-                  src={require("../images/hand.png")}
-                  alt="Logo"
-                  className="items-center md:h-[60px] h-[40px]"
-                />
+              <Link to="/" className="flex justify-center text-black">
+                <h2 className=" text-xl font-bold">Seed Ecommerce</h2>
               </Link>
             </div>
 
@@ -150,13 +146,13 @@ const Nav = ({ onData }) => {
               </span>
               Cart
             </Link>
-            <Link to="/wishlist" className="flex gap-2 relative">
+            {/* <Link to="/wishlist" className="flex gap-2 relative">
               <Heart style={{ color: "FF9900" }} size={20} />
               <span className="absolute top-0 end-0 inline-flex items-center py-0.3 px-1.5 rounded-full text-xs font-sm transform -translate-y-1/2 translate-x-1/2 bg-red-500 text-white">
                 {wishlist?.length}
               </span>
               Wishlist
-            </Link>
+            </Link> */}
             {/* <Link to="/shop" className="flex gap-2 ">
               <CircleUserRound style={{ color: "FF9900" }} size={20} />
               Account

@@ -112,7 +112,7 @@ const Shop = () => {
           <div className="bg-gray-100">
             <img
               style={imageStyle}
-              src={require("../../images/bg.png")}
+              src={require("../../images/seed.jpg")}
               alt="Background"
               className="relative"
             />
@@ -136,7 +136,7 @@ const Shop = () => {
                 className="font-medium text-white"
                 style={{ fontSize: "6vw", marginBottom: "2vw" }}
               >
-                AgriBhai Bijak
+                Seed Ecommerce
               </div>
               <div
                 className="font-medium text-white"
@@ -266,7 +266,7 @@ const Shop = () => {
                       </div>
                     ) : (
                       <img
-                        src={`https://d3oj8gzfxhvk43.cloudfront.net/${item?.photo?.keys[0]}`}
+                        src={`${item?.photo?.keys[0]}`}
                         className="rounded-xl w-full h-full object-cover"
                       />
                     )}
@@ -281,7 +281,7 @@ const Shop = () => {
                     <div className="text-[#FF9900] font-semibold text-lg m-0">
                       ₹{item?.price}/-
                     </div>
-                    <button
+                    {/* <button
                       onClick={() => toggleWishlist(item)}
                       className="me-2"
                     >
@@ -296,7 +296,7 @@ const Shop = () => {
                             : "none"
                         }
                       />
-                    </button>
+                    </button> */}
                   </div>
                   <div className="w-full flex m-0 p-0 ps-2">
                     <div className="w-auto rounded-lg p-1 text-[#FF9900] bg-opacity-[0.2] bg-[#FF9900] text-sm px-3 m-0">
