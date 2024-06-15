@@ -110,14 +110,16 @@ const Shop = () => {
         
         <div style={{ position: "relative" }}>
           <div className="bg-gray-100">
+            <div className=" h-[70vh] w-full overflow-hidden">
+                <img
+                              style={{imageStyle,objectFit:'contain', width:'100%'}}
+                              src={require("../../images/seed.jpg")}
+                              alt="Background"
+                              className="relative"
+                            />
+            </div>
             <img
-              style={imageStyle}
-              src={require("../../images/seed.jpg")}
-              alt="Background"
-              className="relative"
-            />
-            <img
-              style={{ ...imageStyle, position: "absolute", top: 0, left: 0 }}
+              style={{ ...imageStyle, position: "absolute", top: 0, left: 0, }}
               src={require("../../images/garden.png")}
               alt="Foreground"
               className="absolute"
@@ -126,7 +128,7 @@ const Shop = () => {
               style={{
                 ...imageStyle,
                 position: "absolute",
-                top: "40%",
+                top: "20%",
                 left: 0,
                 width: "100%", // Ensure text takes full width
                 textAlign: "center", // Center align text

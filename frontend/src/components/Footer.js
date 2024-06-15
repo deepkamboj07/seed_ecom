@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <>
       <div className="bg-[#040F05] w-full py-12 sm:px-16 px-6 items-center justify-between">
-        <div className="flex lg:gap-20 gap-0 lg:flex-row flex-col sm:justify-between justify-center items-center">
+        <div className="flex flex-col sm:justify-between justify-center items-center">
           {/* <div className="flex items-center">
             <img src={require("../images/punch.png")}
                
@@ -15,7 +15,7 @@ const Footer = () => {
           </div> */}
 
         <div
-            className="text-white sm:flex-grow sm:mt-36 mt-5"
+            className="text-white sm:flex-grow"
           >
             {/*<div className="mb-8 sm:px-5 px-1">
                 <div className=" sm:text-sm text-xs flex flex-wrap sm:justify-between justify-center items-center text-[#FFFFFF]">
@@ -52,9 +52,8 @@ const Footer = () => {
                 </div>
             </div> */}
 
-            <div className="sm:hidden block text-center text-xs">
-                        <h4>copyright 	&#169; {date.getFullYear()}</h4>
-            </div>
+                        <h4 className=" text-center">copyright 	&#169; {date.getFullYear()}</h4>
+            
           </div>
         </div>
       </div>

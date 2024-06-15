@@ -82,7 +82,7 @@ const Nav = ({ onData }) => {
             </div>
 
             <div style={{ width: "70%" }} className="pe-5">
-              <div className="max-w-md mx-auto">
+              {/* <div className="max-w-md mx-auto">
                 <form className="relative" onSubmit={(e) => handleClick(e)}>
                   <input
                     className="block w-full p-4 p-4 pr-16 text-sm text-gray-900 border border-gray-400 rounded-2xl md:h-[50px] h-[40px]"
@@ -132,9 +132,9 @@ const Nav = ({ onData }) => {
                   </div>
                 </form>
               </div>
-            </div>
+            </div> */}
           </div>
-
+        </div>
           <div
             className="text-center flex gap-9 justify-center me-10 hidden md:flex"
             style={{ width: "40%" }}
