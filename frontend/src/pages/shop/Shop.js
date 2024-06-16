@@ -7,7 +7,7 @@ import Pagination from "./components/pagination";
 import { Ban, ChevronDown, Cross, Heart, Plus } from "lucide-react";
 import { useCart } from "../../context/cartContext";
 import { DownOutlined, UserOutlined } from "@ant-design/icons";
-import { Button, Dropdown, Menu, message, Space, Tooltip } from "antd";
+import { Button, Dropdown, Menu, message, Space, Spin, Tooltip } from "antd";
 import Noitems from "./components/Noitems";
 import { Prices } from "./components/Prices";
 import { Link } from "react-router-dom";
@@ -40,6 +40,7 @@ const Shop = () => {
 
     const fetchProducts = async () => {
       try {
+        setLoading(true)
         const response = await axios.get(
           `${
             process.env.REACT_APP_PUBLIC_API_URL
@@ -56,6 +57,8 @@ const Shop = () => {
         }
       } catch (error) {
         toast.error("Internet Connection Lost");
+      }finally{
+        setLoading(false)
       }
     };
     fetchCategories();
@@ -246,7 +249,10 @@ const Shop = () => {
           <div></div>
 
           <div className="flex flex-wrap gap-10 w-[90%] items-center justify-center mb-[50px]">
-            {itemData.length === 0 ? (
+              {loading &&
+                <Spin size="large"/>
+              }
+            {(!loading && itemData.length === 0) ? (
               <Noitems />
             ) : (
               itemData.map((item) => (
